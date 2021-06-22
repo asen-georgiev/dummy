@@ -3,7 +3,7 @@
     <usercard :user="user" :url="url"></usercard>
     <b-row>
       <b-col class="mt-5">
-        <b-button pill v-on:click="logOutUser">
+        <b-button id="user-logout-button" v-on:click="logOutUser">
           LOGOUT
         </b-button>
       </b-col>
@@ -52,5 +52,5 @@ export default {
 </script>
 
 <style scoped>
-
+@import "../css/user.css";
 </style>

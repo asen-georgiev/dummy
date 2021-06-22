@@ -1,0 +1,38 @@
+#user-login-form{
+  background-color: bisque;
+  padding: 3rem;
+  margin-inline: 10rem;
+}
+
+#email-group{
+  margin-inline: 3rem;
+  margin-bottom: 1rem;
+}
+
+#password-group{
+  margin-inline: 3rem;
+  margin-bottom: 1rem;
+}
+
+#login-submit-button{
+  background-color: chocolate;
+  padding-inline: 3rem;
+}
+
+#login-submit-button:hover{
+  background-color: coral;
+}
+
+#user-profile-container{
+  background-color: coral;
+  padding: 3rem;
+}
+
+#user-logout-button{
+  background-color: red;
+  padding-inline: 3rem;
+}
+
+#user-logout-button:hover{
+  background-color: darkred;
+}
