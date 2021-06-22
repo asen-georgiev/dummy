@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>User Login</h1>
-    <b-form>
+    <b-form @submit="loginUser">
       <b-form-group
         id="email-group"
         label="User email"
@@ -31,12 +31,19 @@
           required>
         </b-form-input>
       </b-form-group>
+      <b-button
+        type="submit"
+      >Login
+      </b-button>
 
     </b-form>
   </div>
 </template>
 
 <script>
+
+import {userLogin} from '../services/userLoginService'
+
 export default {
   name: 'UserLogin',
   data () {
@@ -45,6 +52,13 @@ export default {
         userEmail: '',
         userPassword: ''
       }
+    }
+  },
+  methods: {
+    loginUser: async function (event) {
+      event.preventDefault()
+      const user = {userEmail: this.user.userEmail, userPassword: this.user.userPassword}
+      await userLogin(user)
     }
   }
 }
