@@ -4,17 +4,17 @@
   margin-inline: 10rem;
 }
 
-#email-group{
+#user-email-group{
   margin-inline: 3rem;
   margin-bottom: 1rem;
 }
 
-#password-group{
+#user-password-group{
   margin-inline: 3rem;
   margin-bottom: 1rem;
 }
 
-#link-group{
+#user-link-group{
   margin-inline: 3rem;
   margin-top: 1rem;
 }
@@ -40,4 +40,61 @@
 
 #user-logout-button:hover{
   background-color: darkred;
+}
+
+#register-back-button{
+  background-color: red;
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+#register-button{
+  background-color: red;
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+#register-picture{
+  width: 20rem;
+  height: auto;
+}
+
+#update-picture{
+  width: 20rem;
+  height: auto;
+}
+
+#update-userpicture{
+  width: 20rem;
+  height: auto;
+}
+
+#update-back-button{
+  background-color: red;
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+#name-group{
+  margin-bottom: 1rem;
+}
+
+#lastname-group{
+  margin-bottom: 1rem;
+}
+
+#email-group{
+  margin-bottom: 1rem;
+}
+
+#address-group{
+  margin-bottom: 1rem;
+}
+
+#telephone-group{
+  margin-bottom: 1rem;
+}
+
+#password-group{
+  margin-bottom: 1rem;
 }

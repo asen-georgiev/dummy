@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form @submit="registerUser">
+    <b-form @submit="submitForm">
       <b-input-group
         id="name-group"
         prepend="First name">
@@ -56,7 +56,7 @@
           v-on:change="uploadingPicture"
           plain></b-form-file>
       </b-input-group>
-      <b-button type="submit">Register</b-button>
+      <b-button id="register-button" type="submit">{{ buttonName }}</b-button>
     </b-form>
   </div>
 </template>
@@ -69,12 +69,16 @@ export default {
       type: Object,
       required: true
     },
-    registerUser: {
+    submitForm: {
       type: Function,
       required: true
     },
     uploadingPicture: {
       type: Function,
+      required: true
+    },
+    buttonName: {
+      type: String,
       required: true
     }
   }
@@ -82,5 +86,5 @@ export default {
 </script>
 
 <style scoped>
-
+@import "../css/user.css";
 </style>

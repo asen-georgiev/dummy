@@ -1,12 +1,13 @@
 <template>
   <div>
     <b-container id="register-container" fluid="md">
-      <b-button v-on:click="loginRedirect">Back to Login page</b-button>
-      <b-img v-if="visiblePicture" :src="visiblePicture"></b-img>
+      <b-button id="register-back-button" v-on:click="loginRedirect">Back to Login page</b-button>
       <user-register-form
+        :buttonName=buttonName
         :user="user"
         :uploadingPicture="uploadingPicture"
-        :registerUser="registerUser"></user-register-form>
+        :submitForm="registerUser"></user-register-form>
+      <b-img id="register-picture" v-if="visiblePicture" :src="visiblePicture"></b-img>
     </b-container>
   </div>
 </template>
@@ -35,7 +36,8 @@ export default {
         userTelephone: ''
       },
       uploadedPicture: null,
-      visiblePicture: null
+      visiblePicture: null,
+      buttonName: 'REGISTER'
     }
   },
   methods: {
@@ -72,5 +74,5 @@ export default {
 </script>
 
 <style scoped>
-
+@import "../css/user.css";
 </style>

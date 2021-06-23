@@ -21,3 +21,31 @@ export function registerUser (user) {
       return Promise.reject(error)
     })
 }
+
+export function updateUser (user, userId) {
+  const body = {...user}
+  return httpService
+    .put(userUrl(userId), body, {
+      headers: {
+        'x-auth-token': getLoggedUser()
+      }
+    })
+}
+
+export function deleteUser (userId) {
+  return httpService
+    .delete(userUrl(userId), {
+      headers: {
+        'x-auth-token': getLoggedUser()
+      }
+    })
+}
+
+export function getUser (userId) {
+  return httpService
+    .get(userUrl(userId), {
+      headers: {
+        'x-auth-token': getLoggedUser()
+      }
+    })
+}

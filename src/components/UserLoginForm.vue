@@ -2,7 +2,7 @@
   <div>
     <b-form @submit="formSubmit" id="user-login-form">
       <b-form-group
-        id="email-group"
+        id="user-email-group"
         label="User email"
         label-for="email-input"
         description="We will always share your credentials">
@@ -17,7 +17,7 @@
       </b-form-group>
 
       <b-form-group
-        id="password-group"
+        id="user-password-group"
         label="User password"
         label-for="password-input"
         description="Your password must be min. 8 characters long">
@@ -36,7 +36,7 @@
         LOGIN
       </b-button>
       <b-form-group
-        id="link-group"
+        id="user-link-group"
         label="You don't have a profile?">
         <b-link :href="registerlink">CREATE PROFILE</b-link>
       </b-form-group>
