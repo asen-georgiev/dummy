@@ -19,8 +19,18 @@
 <script>
 export default {
   name: 'UserCard',
-  props: ['user', 'url']
+  props: {
+    user: {
+      type: Object,
+      required: true
+    },
+    url: {
+      type: String,
+      required: true
+    }
+  }
 }
+
 </script>
 
 <style scoped>

@@ -2,7 +2,10 @@
   <div>
     <b-container id="login-container" fluid="md">
       <h1>User Login</h1>
-      <user-login-form :user="user" :formSubmit="loginUser"></user-login-form>
+      <user-login-form
+        :user="user"
+        :formSubmit="loginUser"
+        :registerlink="createProfileLink"></user-login-form>
     </b-container>
   </div>
 </template>
@@ -23,7 +26,8 @@ export default {
       user: {
         userEmail: '',
         userPassword: ''
-      }
+      },
+      createProfileLink: '#/userregister'
     }
   },
   methods: {

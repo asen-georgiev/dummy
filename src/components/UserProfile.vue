@@ -35,7 +35,7 @@ export default {
     logOutUser () {
       userLogout()
       this.user = {}
-      router.push('/userlogin')
+      router.push('/')
     }
   },
   created () {

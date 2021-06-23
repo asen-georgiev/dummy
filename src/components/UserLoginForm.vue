@@ -35,18 +35,36 @@
         type="submit">
         LOGIN
       </b-button>
-
+      <b-form-group
+        id="link-group"
+        label="You don't have a profile?">
+        <b-link :href="registerlink">CREATE PROFILE</b-link>
+      </b-form-group>
     </b-form>
+
   </div>
 </template>
 
 <script>
 export default {
   name: 'UserLoginForm',
-  props: ['user', 'formSubmit']
+  props: {
+    user: {
+      type: Object,
+      required: true
+    },
+    formSubmit: {
+      type: Function,
+      required: true
+    },
+    registerlink: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
 <style scoped>
-  @import "../css/user.css";
+@import "../css/user.css";
 </style>
