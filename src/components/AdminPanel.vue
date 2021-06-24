@@ -27,8 +27,8 @@ export default {
     return {
       admin: {},
       items: [
-        {name: 'Admins', register: 'Admin Register', list: 'Admins list'},
-        {name: 'Users', register: 'User Register', list: 'Users list'}
+        {name: 'Admins', register: 'Admin Register', list: 'Admin list'},
+        {name: 'Users', register: 'User Register', list: 'User list'}
       ]
     }
   },

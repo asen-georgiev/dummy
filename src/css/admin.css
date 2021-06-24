@@ -37,3 +37,63 @@
 #admin-logout-button:hover{
   background-color: coral;
 }
+
+#admin-register-container{
+  background-color: lightgray;
+  padding: 3rem;
+}
+
+#admin-register-button{
+  background-color: goldenrod;
+  padding-inline: 3rem;
+}
+
+#admin-register-button:hover{
+  background-color: darkgoldenrod;
+  padding-inline: 3rem;
+}
+
+#admin-back-button{
+  background-color: red;
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+#admin-back-button:hover{
+  background-color: darkred;
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+#admin-list-container{
+  background-color: lightsalmon;
+  padding: 3rem;
+}
+
+#admin-update-button{
+  background-color: darkseagreen;
+}
+
+#admin-update-button:hover{
+  background-color: darkgreen;
+}
+
+#admin-delete-button{
+  background-color: deeppink;
+}
+
+#admin-delete-button:hover{
+  background-color: darkmagenta;
+}
+
+#admin-email2-group{
+  margin-bottom: 1rem;
+}
+
+#admin-password2-group{
+  margin-bottom: 1rem;
+}
+
+#admin-name-group{
+  margin-bottom: 1rem;
+}

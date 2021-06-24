@@ -18,7 +18,6 @@
 import UserRegisterForm from './UserRegisterForm'
 import {picUrl} from '../config.json'
 import {getUser, updateUser} from '../services/userService'
-import {userLogout} from '../services/userLoginService'
 import {uploadImage} from '../services/imageService'
 import router from '../router'
 
@@ -90,8 +89,7 @@ export default {
         data.append('file', this.uploadedPicture)
         await uploadImage(data)
       }
-      userLogout()
-      await router.push('/userlogin')
+      await router.push('/userprofile')
     },
     updateRedirect: function () {
       router.push('/userprofile')

@@ -5,6 +5,7 @@ axios.interceptors.response.use(success => {
   return (success)
 }, error => {
   console.log(error.response.data)
+  alert(error.response.data)
   return Promise.reject(error)
 })
 

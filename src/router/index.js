@@ -6,11 +6,19 @@ import UserRegister from '../components/UserRegister'
 import UserUpdate from '../components/UserUpdate'
 import AdminLogin from '../components/AdminLogin'
 import AdminPanel from '../components/AdminPanel'
+import HomePage from '../components/HomePage'
+import AdminRegister from '../components/AdminRegister'
+import AdminList from '../components/AdminList'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/',
+      name: 'HomePage',
+      component: HomePage
+    },
     {
       path: '/userlogin',
       name: 'UserLogin',
@@ -40,6 +48,16 @@ export default new Router({
       path: '/adminpanel',
       name: 'AdminPanel',
       component: AdminPanel
+    },
+    {
+      path: '/adminregister',
+      name: 'AdminRegister',
+      component: AdminRegister
+    },
+    {
+      path: '/adminlist',
+      name: 'AdminList',
+      component: AdminList
     }
   ]
 })

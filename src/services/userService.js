@@ -30,6 +30,14 @@ export function updateUser (user, userId) {
         'x-auth-token': getLoggedUser()
       }
     })
+    .then(response => {
+      if (response.data) {
+        localStorage.setItem('user', response.data)
+      }
+    })
+    .catch(error => {
+      return Promise.reject(error)
+    })
 }
 
 export function deleteUser (userId) {
