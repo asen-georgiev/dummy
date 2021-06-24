@@ -5,6 +5,8 @@
       <user-login-form
         :user="user"
         :formSubmit="loginUser"
+        :emailValidation="emailValidation"
+        :passwordValidation="passwordValidation"
         :registerlink="createProfileLink"></user-login-form>
     </b-container>
   </div>
@@ -36,6 +38,14 @@ export default {
       const user = {userEmail: this.user.userEmail, userPassword: this.user.userPassword}
       await userLogin(user)
       await router.push('/userprofile')
+    }
+  },
+  computed: {
+    emailValidation: function () {
+      return this.user.userEmail.length > 5
+    },
+    passwordValidation: function () {
+      return this.user.userPassword.length > 8
     }
   }
 }

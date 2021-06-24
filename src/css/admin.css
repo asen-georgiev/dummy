@@ -1,0 +1,39 @@
+#admin-login-form{
+  background-color: lightgreen;
+  padding: 3rem;
+  margin-inline: 10rem;
+}
+
+#admin-email-group{
+  margin-inline: 3rem;
+  margin-bottom: 1rem;
+}
+
+#admin-password-group{
+  margin-inline: 3rem;
+  margin-bottom: 1rem;
+}
+
+#admin-login-button{
+  background-color: chocolate;
+  padding-inline: 3rem;
+}
+
+#admin-login-button:hover{
+  background-color: coral;
+}
+
+#admin-login-container{
+  background-color: lightgray;
+  padding: 3rem;
+}
+
+#admin-logout-button{
+  background-color: chocolate;
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+#admin-logout-button:hover{
+  background-color: coral;
+}

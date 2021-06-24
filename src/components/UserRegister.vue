@@ -67,7 +67,7 @@ export default {
       await router.push('/userprofile')
     },
     loginRedirect: function () {
-      router.push('/')
+      router.push('/userlogin')
     }
   }
 }

@@ -42,6 +42,32 @@
   background-color: darkred;
 }
 
+#update-container{
+  background-color: coral;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+#user-update-button{
+  background-color: darkslateblue;
+  padding-inline: 3rem;
+}
+
+#user-update-button:hover{
+  background-color: navy;
+  padding-inline: 3rem;
+}
+
+#user-delete-button{
+  background-color: goldenrod;
+  padding-inline: 3rem;
+}
+
+#user-delete-button:hover{
+  background-color: darkgoldenrod;
+  padding-inline: 3rem;
+}
+
 #register-back-button{
   background-color: red;
   padding-inline: 3rem;

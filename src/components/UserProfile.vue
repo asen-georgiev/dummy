@@ -1,5 +1,6 @@
 <template>
   <div>
+    <b-container fluid="md" id="user-profile-container">
     <usercard :user="user" :url="url"></usercard>
     <b-row>
       <b-col class="mt-5">
@@ -18,7 +19,7 @@
         </b-button>
       </b-col>
     </b-row>
-
+    </b-container>
   </div>
 </template>
 

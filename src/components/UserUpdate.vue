@@ -91,7 +91,7 @@ export default {
         await uploadImage(data)
       }
       userLogout()
-      await router.push('/')
+      await router.push('/userlogin')
     },
     updateRedirect: function () {
       router.push('/userprofile')

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <b-container fluid="md" id="user-profile-container">
       <b-row>
         <b-col>
           <b-img :src="url+user.userPicture"></b-img>
@@ -12,7 +11,6 @@
           <h3>{{ user.userTelephone }}</h3>
         </b-col>
       </b-row>
-    </b-container>
   </div>
 </template>
 
