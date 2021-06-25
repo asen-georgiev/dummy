@@ -14,10 +14,10 @@
         <td>{{ admin.adminName }}</td>
         <td>{{ admin.adminEmail }}</td>
         <td>
-          <b-button id="admin-update-button" v-on:click="adminUpdate">UPDATE</b-button>
+          <b-button id="admin-update-button" v-on:click="()=>adminUpdate(admin)">UPDATE</b-button>
         </td>
         <td>
-          <b-button id="admin-delete-button" v-on:click="adminDelete">DELETE</b-button>
+          <b-button id="admin-delete-button" v-on:click="()=>adminDelete(admin)">DELETE</b-button>
         </td>
       </tr>
       </tbody>

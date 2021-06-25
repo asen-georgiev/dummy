@@ -64,6 +64,7 @@ export default {
         data.append('file', this.uploadedPicture)
         await uploadImage(data)
       }
+      alert('User registered')
       await router.push('/userprofile')
     },
     loginRedirect: function () {

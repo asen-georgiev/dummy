@@ -89,6 +89,7 @@ export default {
         data.append('file', this.uploadedPicture)
         await uploadImage(data)
       }
+      alert('User updated')
       await router.push('/userprofile')
     },
     updateRedirect: function () {

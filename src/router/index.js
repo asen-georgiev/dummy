@@ -9,6 +9,7 @@ import AdminPanel from '../components/AdminPanel'
 import HomePage from '../components/HomePage'
 import AdminRegister from '../components/AdminRegister'
 import AdminList from '../components/AdminList'
+import AdminUpdate from '../components/AdminUpdate'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/adminlist',
       name: 'AdminList',
       component: AdminList
+    },
+    {
+      path: '/adminlist/:id',
+      name: 'AdminUpdate',
+      component: AdminUpdate
     }
   ]
 })

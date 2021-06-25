@@ -12,7 +12,7 @@
 
 <script>
 
-import {getAllAdmins} from '../services/adminService'
+import {getAllAdmins, deleteAdmin} from '../services/adminService'
 import AdminListTable from './AdminListTable'
 import router from '../router'
 
@@ -27,11 +27,22 @@ export default {
     }
   },
   methods: {
-    adminUpdate: function () {
-      console.log('Admin update')
+    adminUpdate: function (admin) {
+      router.push(`/adminlist/${admin._id}`)
     },
-    adminDelete: function () {
-      console.log('Admin delete')
+    adminDelete: async function (admin) {
+      const allAdmins = this.admins
+      const admins = allAdmins.filter(adm => adm._id !== admin._id)
+      this.admins = admins
+
+      try {
+        await deleteAdmin(admin._id)
+        alert('Admin deleted!')
+      } catch (error) {
+        if (error.response && error.response.status === 404) {
+          this.admins = allAdmins
+        }
+      }
     },
     adminRedirect: function () {
       router.push('/adminpanel')
